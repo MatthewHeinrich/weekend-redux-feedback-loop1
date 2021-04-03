@@ -11,9 +11,9 @@ function Support () {
     const addSupportInfo = () =>{
         
         const addSupport={
-            support: support
+            support: Number.parseInt(support)
         }
-        dispatch({ type: 'feedback', payload: addSupport})
+        dispatch({ type: 'feedback', payload: {propertyName: 'support', value: addSupport.support}})
     }
     
     return(

@@ -11,9 +11,9 @@ let [understanding, setUnderstanding] = useState('');
 const addUnderstandingInfo = () =>{
     
     const addUnderstanding={
-        understanding: understanding
+        understanding: Number.parseInt(understanding)
     }
-    dispatch({ type: 'feedback', payload: addUnderstanding})
+    dispatch({ type: 'feedback', payload: {propertyName: 'understanding', value: addUnderstanding.understanding}})
 }
 
     return(

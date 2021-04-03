@@ -6,14 +6,14 @@ function Comments() {
     
     const dispatch = useDispatch();
 
-let [comment, setComment] = useState('');
+let [comments, setComment] = useState('');
 
 const addCommentInfo = () =>{
     
     const addComment={
-        comment: comment
+        comments: comments
     }
-    dispatch({ type: 'feedback', payload: addComment})
+    dispatch({ type: 'feedback', payload: {propertyName: 'comments', value: addComment.comments} })
 }
     
     return(
