@@ -9,7 +9,11 @@ import { applyMiddleware, combineReducers, createStore } from 'redux';
 
 
 const feedbackData = (state=[], action) =>{
-    console.log('in feedbackData');
+    if(action.type === 'feedback'){
+        console.log('in feedback reducer', action.payload);
+        return [...state, action.payload];
+    }
+    
     return state;
 }
 
