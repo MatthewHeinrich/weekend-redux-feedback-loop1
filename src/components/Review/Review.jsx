@@ -17,7 +17,7 @@ function Review(props) {
     const sendFeedbackInfo = () =>{
         alert('Thanks for the feeback! :)');
 
-        axios({
+        axios({  // posts feedback to database
             method: 'POST',
             url: '/api/feedback',
             data: feedbackReview
@@ -29,15 +29,15 @@ function Review(props) {
             console.log('in POST feedback', err);
         });
         
-    }           
+    } // end sendFeedbackInfo           
 
     console.log('feedback check', feedbackReview);
         
-    return(
+    return( // renders all feedback responses 
         <>
         
             <h2>Review</h2>
-            <div>
+            <div>  
                 
                     
                     <h3>Feeling: {feedbackReview.feeling}</h3>

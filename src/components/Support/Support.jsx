@@ -20,9 +20,9 @@ function Support () {
         }
         dispatch({ type: 'feedback', payload: {propertyName: 'support', value: addSupport.support}})
         }
-    }
+    } // end addSupportInfo 
     
-    return(
+    return( // renders DOM elements
         <>
         <h2>How well are you being supported?</h2>
         <p>Understanding between 1-10</p>
@@ -32,7 +32,7 @@ function Support () {
         <Button variant="contained" color="primary">Next</Button>
         </Link>
         </>
-    )
-}
+    ) // end return 
+} // end Support 
 
 export default Support;

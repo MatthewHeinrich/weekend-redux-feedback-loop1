@@ -11,20 +11,20 @@ let [understanding, setUnderstanding] = useState('');
 
 
 
-const addUnderstandingInfo = () =>{
+    const addUnderstandingInfo = () =>{
 
-    if( understanding === ''){
-        alert('Please provide a score')
-    } else{
-        alert('Understanding Submitted')
-    const addUnderstanding={
-        understanding: Number.parseInt(understanding)
-    }
-    dispatch({ type: 'feedback', payload: {propertyName: 'understanding', value: addUnderstanding.understanding}})
-    }
-}
+        if( understanding === ''){
+            alert('Please provide a score')
+        } else{
+            alert('Understanding Submitted')
+        const addUnderstanding={
+            understanding: Number.parseInt(understanding)
+        }
+        dispatch({ type: 'feedback', payload: {propertyName: 'understanding', value: addUnderstanding.understanding}})
+        }
+    } // end addUnderstandingInfo 
 
-    return(
+    return( // renders DOM elements  
         <>
         <h2>How well are you understanding the content?</h2>
         <p>Understanding between 1-10</p>
@@ -35,7 +35,7 @@ const addUnderstandingInfo = () =>{
             <Button variant="contained" color="primary">Next</Button>
         </Link>
         </>
-    )
-}
+    ) // end return 
+} // end Understanding 
 
 export default Understanding;

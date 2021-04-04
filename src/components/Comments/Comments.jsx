@@ -9,17 +9,16 @@ function Comments() {
 
 let [comments, setComment] = useState('');
 
-const addCommentInfo = () =>{
+    const addCommentInfo = () =>{
 
-        
+            
         const addComment={
             comments: comments
         }
-        dispatch({ type: 'feedback', payload: {propertyName: 'comments', value: addComment.comments} })
+        dispatch({ type: 'feedback', payload: {propertyName: 'comments', value: addComment.comments} })        
+    } // end addCommentInfo 
     
-}
-    
-    return(
+    return( // renders DOM elements 
         <>
         <h2>Any comments you want to leave?</h2>
         <input id="commentInput" type="text" onChange={(event)=> setComment(event.target.value)}></input>
@@ -30,7 +29,7 @@ const addCommentInfo = () =>{
         </Link>
         
         </>
-    )
-}
+    ) // end return 
+} // end Comments 
 
 export default Comments;

@@ -8,11 +8,10 @@ import Button from '@material-ui/core/Button';
 
 function Feeling() {
 
+    //defining dispatch
 const dispatch = useDispatch();
 
-let [feeling, setFeeling] = useState('');
-const [show, setShow] = useState(true);
-
+let [feeling, setFeeling] = useState(''); // setting state 
 
 const addFeelingInfo = () =>{
     if( feeling === ''){
@@ -24,11 +23,11 @@ const addFeelingInfo = () =>{
         }
         dispatch({ type: 'feedback', payload: {propertyName: 'feeling', value: addFeeling.feeling } } );
     }
-}
+} // end addFeelingInfo 
 
 
 
-    return(
+    return( // renders DOM elements 
         <form type="submit">
             <h2>How are you feeling today?</h2>
             <p>Feeling between 1-10</p>
@@ -43,7 +42,7 @@ const addFeelingInfo = () =>{
             </script>
             
         </form>
-    )
-}
+    ) // end return 
+} // end Feeling 
 
 export default Feeling;
