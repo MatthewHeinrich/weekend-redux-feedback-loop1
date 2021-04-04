@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import axios from 'axios';
 import {useHistory} from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 function Review(props) {
 
@@ -14,6 +15,7 @@ function Review(props) {
     })
 
     const sendFeedbackInfo = () =>{
+        alert('Thanks for the feeback! :)');
 
         axios({
             method: 'POST',
@@ -45,7 +47,7 @@ function Review(props) {
                     
                 
             </div>
-            <button onClick={ (event) => sendFeedbackInfo() }>Submit</button> 
+            <Button variant="contained" color="primary" onClick={ (event) => sendFeedbackInfo() }>Submit</Button> 
         
         </>
     )// on click of button, save to database, bring to success page, clear data and button for new survey

@@ -20,7 +20,7 @@ function App() {
         <h4>Don't forget it!</h4>
       </header>
       <HashRouter>
-      <Route path = '/' exact>
+        <Route path = '/' exact>
           <Home />
         </Route>
         <Route path = '/Feeling' exact>

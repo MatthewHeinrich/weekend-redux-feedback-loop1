@@ -21,3 +21,42 @@
 h4 {
   font-style: italic;
 }
+
+#feelingInput{
+  margin-left: 18%;
+  margin-top: 1%;
+  color:blue;
+  font-size: 1.5em;
+}
+
+#understandInput{
+  margin-left: 18%;
+  margin-top: 1%;
+  color:blue;
+  font-size: 1.5em;
+}
+
+#supportInput{
+  margin-left: 18%;
+  margin-top: 1%;
+  color:blue;
+  font-size: 1.5em;
+}
+
+#commentInput{
+  color: blue;
+  font-size: 1.2em;
+}
+
+#feelingButton{
+  margin-right: 8em;
+  align-self: center;
+}
+#understandButton{
+  margin-right: 8em;
+  align-self: center;
+}
+#supportButton{
+  margin-right: 8em;
+  align-self: center;
+}
